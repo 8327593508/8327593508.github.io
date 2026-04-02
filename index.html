@@ -8,35 +8,29 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#0b1120;color:#e5e7eb;line-height:1.6}
+body{background:#0b1120;color:#e5e7eb}
 
 header{
   background:linear-gradient(135deg,#1e3a8a,#0f172a);
   text-align:center;
-  padding:80px 20px;
+  padding:90px 20px;
 }
 
-header h1{font-size:42px;font-weight:600}
+header h1{font-size:45px}
 header p{margin:10px 0;color:#93c5fd}
 
 .btns a{
   margin:10px;
-  display:inline-block;
-  padding:10px 18px;
-  border-radius:8px;
-  text-decoration:none;
-  color:white;
+  padding:10px 20px;
   background:#2563eb;
-  transition:0.3s;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
 }
-.btns a:hover{background:#1d4ed8}
 
-section{padding:60px 10%;}
+section{padding:60px 10%}
 
-h2{
-  margin-bottom:20px;
-  color:#60a5fa;
-}
+h2{color:#60a5fa;margin-bottom:20px}
 
 .cards{
   display:grid;
@@ -49,129 +43,112 @@ h2{
   padding:20px;
   border-radius:12px;
   transition:0.3s;
-  border:1px solid #1f2937;
+}
+.card:hover{transform:scale(1.03)}
+
+.skill-box{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  border-color:#3b82f6;
+.skill{
+  background:#1e293b;
+  padding:8px 14px;
+  border-radius:20px;
+  font-size:14px;
 }
 
-ul{margin-top:10px;padding-left:20px}
-
-footer{
-  text-align:center;
-  padding:20px;
-  background:#020617;
-  color:#9ca3af;
-}
+footer{text-align:center;padding:20px;background:#020617}
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>🚀 Subham Das</h1>
-  <p>Data Engineer • AI/ML Engineer • Analyst</p>
-  <p>"I don’t just analyze data, I tell its story."</p>
-
-  <div class="btns">
-    <a href="https://www.linkedin.com/in/subham-das-6a7809198/">LinkedIn</a>
-    <a href="mailto:subham.das.jobs08@gmail.com">Email</a>
-  </div>
+<h1>🚀 Subham Das</h1>
+<p>Data Engineer • AI/ML Engineer • Analyst</p>
+<p><b>"I don’t just analyze data, I tell its story."</b></p>
+<div class="btns">
+<a href="https://www.linkedin.com/in/subham-das-6a7809198/">LinkedIn</a>
+<a href="mailto:subham.das.jobs08@gmail.com">Email</a>
+</div>
 </header>
 
 <section>
-  <h2>💡 About Me</h2>
-  <p>I build scalable data pipelines, deploy machine learning models, and create analytics systems that drive real business impact using Python, SQL, AWS, and Airflow.</p>
+<h2>💡 About Me</h2>
+<p>I am a passionate Data Engineer and AI enthusiast who builds end-to-end intelligent systems—from raw data ingestion to scalable deployment. I specialize in transforming complex data into meaningful insights that drive real-world decisions. With hands-on experience in cloud deployment, automation, and machine learning, I focus on creating systems that are not only functional but impactful.</p>
 </section>
 
 <section>
-  <h2>🧠 Tech Stack</h2>
-  <p>Python, SQL, Airflow, AWS, Docker, PostgreSQL, Power BI, Machine Learning</p>
+<h2>🧠 Tech Stack</h2>
+<div class="skill-box">
+<span class="skill">Python</span>
+<span class="skill">SQL</span>
+<span class="skill">Airflow</span>
+<span class="skill">AWS</span>
+<span class="skill">Docker</span>
+<span class="skill">PostgreSQL</span>
+<span class="skill">Power BI</span>
+<span class="skill">Machine Learning</span>
+<span class="skill">Git</span>
+<span class="skill">Linux</span>
+</div>
 </section>
 
 <section>
-  <h2>🚀 Projects</h2>
+<h2>🚀 Projects</h2>
+<div class="cards">
 
-  <div class="cards">
+<div class="card">
+<h3>🌦️ SkyCast AI</h3>
+<p>End-to-end weather forecasting system with ML pipelines and AWS deployment.</p>
+</div>
 
-    <div class="card">
-      <h3>🌦️ SkyCast AI</h3>
-      <ul>
-        <li>Airflow pipelines for automation</li>
-        <li>ML forecasting models</li>
-        <li>AWS EC2 deployment</li>
-        <li>Flask + PostgreSQL</li>
-        <li>End-to-end system</li>
-      </ul>
-    </div>
+<div class="card">
+<h3>🔧 ETL Pipeline</h3>
+<p>Automated data pipeline using GitHub Actions, PostgreSQL, and dashboards.</p>
+</div>
 
-    <div class="card">
-      <h3>🔧 ETL Pipeline</h3>
-      <ul>
-        <li>GitHub Actions automation</li>
-        <li>API data ingestion</li>
-        <li>PostgreSQL storage</li>
-        <li>Power BI dashboard</li>
-        <li>Reduced manual work</li>
-      </ul>
-    </div>
+<div class="card">
+<h3>📊 EV Analytics</h3>
+<p>SQL-based dashboard analyzing EV trends and KPIs.</p>
+</div>
 
-    <div class="card">
-      <h3>📊 EV Dashboard</h3>
-      <ul>
-        <li>SQL optimization</li>
-        <li>KPI dashboards</li>
-        <li>Trend analysis</li>
-        <li>Business insights</li>
-        <li>Decision support</li>
-      </ul>
-    </div>
+<div class="card">
+<h3>💱 Exchange Rate Analysis</h3>
+<p>Time-series financial analysis and trend insights.</p>
+</div>
 
-    <div class="card">
-      <h3>💱 Exchange Analysis</h3>
-      <ul>
-        <li>Time series analysis</li>
-        <li>Trend visualization</li>
-        <li>Data cleaning</li>
-        <li>Anomaly detection</li>
-        <li>Financial insights</li>
-      </ul>
-    </div>
+<div class="card">
+<h3>🎬 IMDB Analysis</h3>
+<p>Movie dataset analysis using SQL and Python.</p>
+</div>
 
-    <div class="card">
-      <h3>🎬 IMDB Analysis</h3>
-      <ul>
-        <li>Data preprocessing</li>
-        <li>SQL queries</li>
-        <li>Trend insights</li>
-        <li>Visualization</li>
-        <li>User behavior analysis</li>
-      </ul>
-    </div>
+<div class="card">
+<h3>🏏 Cricket Analysis</h3>
+<p>Performance and match data analysis to derive player and team insights.</p>
+</div>
 
-  </div>
+</div>
 </section>
 
 <section>
-  <h2>📜 Certifications</h2>
-  <ul>
-    <li>AWS EC2 Auto Scaling</li>
-    <li>AWS EC2 Basics</li>
-    <li>AWS Serverless</li>
-    <li>NPTEL Python</li>
-    <li>NPTEL C++</li>
-  </ul>
+<h2>🎯 Services</h2>
+<p><b>Data Engineering:</b> Building scalable ETL pipelines and data workflows.</p>
+<p><b>AI & Machine Learning:</b> Developing predictive models and intelligent systems.</p>
+<p><b>Cloud Deployment:</b> Deploying applications using AWS and Docker.</p>
+<p><b>Data Analytics:</b> Creating dashboards and extracting actionable insights.</p>
+<p><b>Database Development:</b> Designing efficient schemas and optimized queries.</p>
 </section>
 
 <section>
-  <h2>🎯 Services</h2>
-  <p>Data Engineering • AI Solutions • Cloud Deployment • Analytics • Database Design</p>
+<h2>📜 Certifications</h2>
+<p>AWS EC2 • AWS Serverless • NPTEL Python • NPTEL C++</p>
 </section>
 
 <footer>
-  <p>📧 subham.das.jobs08@gmail.com</p>
+<p>📧 subham.das.jobs08@gmail.com</p>
 </footer>
 
 </body>
